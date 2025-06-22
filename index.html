@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nostra</title>
+  <!--Tailwind css cdn link-->
+  <link href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+" rel="stylesheet">
+</head>
+
+<body>
+  <!--flashing-->
+  <nav class="text-center bg-white text-black mb-1 inline">
+    <p>Signup and <b>GET 20% OFF</b> on your first order</p>
+  </nav>
+  <!--Responsive navbar-->
+  <nav class="bg-gray-200 p-3 flex items-center justify-between sticky top-0 z-10">
+    <h1 class="text-2xl font-bold">NOSTRA</h1>
+
+    <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" width="20" height="20" class="size-6 md:hidden">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+
+    <ul class="flex gap-5 hidden md:flex ">
+      <li>
+        <a class="hover:underline font-bold " href="./index.html">Home</a>
+      </li>
+      <li>
+        <a class="hover:underline font-bold" href="./newarrival.html">New Arrival</a>
+      </li>
+      <li>
+        <a class="hover:underline font-bold" href="./most-wanted.html">Most Wanted</a>
+      </li>
+      <li>
+        <a class="hover:underline font-bold" href="./collections.html">Collections</a>
+      </li>
+      <li>
+        <a class="hover:underline font-bold" href="./contact.html">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!--side navbar-->
+  <section id="sidenav" class="bg-gray-100 fixed z-20 top-0 transition-all duration-1000"
+    style="width: 50%; height: 100vh;right: -50%">
+    <div class="text-right p-5">
+      <p id="closenav" class="inline cursor-pointer">X</p>
+    </div>
+    <ul class="flex flex-col gap-10  items-center text-gray-600">
+      <li>
+        <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+      </li>
+      <li>
+        <a class="hover:underline hover:text-black" href="./newarrival.html">New Arrival</a>
+      </li>
+      <li>
+        <a class="hover:underline hover:text-black" href="./most-wanted.html">Most-wanted</a>
+      </li>
+      <li>
+        <a class="hover:underline hover:text-black" href="./collections.html">Collections</a>
+      </li>
+      <li>
+        <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+      </li>
+    </ul>
+  </section>
+
+  <!--header section-->
+  <section class="p-4 relative  overflow-hidden">
+
+    <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+      <img class="w-full flex-shrink-0" src="./images/header_img2.jpg">
+      <img class="w-full flex-shrink-0" src="./images/header.png">
+    </div>
+
+    <div class="absolute inset-0 flex flex-col items-center justify-center p-6 md:p-12">
+      <h1 class="font-bold text-3xl mb-3 text-white md:text-5xl ">Level up your style with our</h1>
+      <p class="mb-3 text-white md:text-2xl">Summer Collection</p>
+      <a class="flex items-center gap-2 bg-gray-200 p-1 border border-black rounded md:p-2" href="#"
+        class="shop-btn">Shop Now<img class="h-4 w-4" src="./images/right-arrow.png"> </a>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button id="prev" class="absolute left-4 ml-5 top-1/2 transform -translate-y-2 bg-white p-4 text-5xl">‹</button>
+    <button id="next" class="absolute right-4 mr-5 top-1/2 transform -translate-y-2 bg-white p-4 text-5xl z-50">›</button>
+  </section>
+
+  <!--brand-->
+  <section class="p-4">
+    <h1 class="font-bold text-3xl mb-4 ">Brands</h1>
+    <div class="flex  flex-wrap gap-x-12 gap-y-12 items-center justify-center md:flex-row justify-between ">
+      <div class="flex flex-col items-center">
+        <img class="h-10 w-10 md:h-15 w-15 " src="./images/adidas.png">
+        <p class="items-center text-xl md:text-2xl">Adidas</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <img class="h-10 w-10 md:h-15 w-15" src="./images/behance.png">
+        <p class="items-center text-xl md:text-2xl gap-x-2">Behance</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <img class="h-10 w-10 md:h-15 w-15 " src="./images/leaves.png">
+        <p class="items-center text-xl md:text-2xl gap-x-2">Leaves</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <img class="h-10 w-10 md:h-15 w-15" src="./images/pepsi.png">
+        <p class="items-center text-xl">Pepsi</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <img class="h-10 w-10 md:h-15 w-15" src="./images/puma.png">
+        <p class="items-center text-xl">Puma</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <img class="h-10 w-10 md:h-15 w-15" src="./images/w.png">
+        <p class="items-center text-xl">W</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <img class="h-10 w-10 md:h-15 w-15" src="./images/walmart.png">
+        <p class="items-center text-xl">Walmart</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <img class="h-10 w-10 md:h-15 w-15" src="./images/letter-z.png">
+        <p class="items-center text-xl">Zara</p>
+      </div>
+    </div>
+  </section>
+
+  <!--promise-->
+  <section class="flex items-center justify-between p-5 bg-gray-50 ">
+    <div class="">
+      <h1 class="font-bold text-2xl p-2">We provide best<br> customer Experiences</h1>
+    </div>
+    <div>
+      <p class="text-s p-2">|| We ensure that our customer have the best shopping experience</p>
+    </div>
+  </section>
+
+
+  <!--brand showcase-->
+  <section class="flex flex-col mt-1 gap-3 p-3 md:flex-row">
+    <div class="bg-gray-100 p-3 rounded">
+      <img class="h-10 w-10 mb-2" src="./images/check-mark.png">
+      <h1 class="font-bold">Original Products</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quasi?</p>
+    </div>
+    <div class="bg-gray-100 p-3 rounded">
+      <img class="h-10 w-10 mb-2" src="./images/happy.png">
+      <h1 class="font-bold">Satisfaction Guarantee</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptas.</p>
+    </div>
+    <div class="bg-gray-100 p-3">
+      <img class="h-10 w-10 mb-2" src="./images/paint-brush.png">
+      <h1 class="font-bold">New Arrival Everyday</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, id!</p>
+    </div>
+    <div class="bg-gray-100 p-3">
+      <img class="h-10 w-10 mb-2" src="./images/cargo-truck.png">
+      <h1 class="font-bold">Fast & Free shipping</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, assumenda!</p>
+    </div>
+  </section>
+
+  <!--new arrivals-->
+  <section class="p-4">
+    <h1 class="font-bold text-3xl mb-5">New Arrivals</h1>
+
+    <div class="grid grid-cols-2 mt-5 gap-5 md:grid-cols-4 p-5">
+      <div class="relative">
+        <img class="" src="./images/floral/Untitled design (6).png">
+        <img class="h-6 w-6 absolute top-0 m-2 bg-gray-100" src="./images/heart (1).png " alt="Heart icon">
+        <button class="absolute inset-0 left-0 flex items-center justify-center ">
+          <span class="border border-black bg-gray-400 px-2 py-1">Shop Now<img class="h-4 w-4"
+              src="./images/right-arrow.png"></span>
+        </button>
+      </div>
+
+      <div class="relative">
+        <img src="./images/floral/Untitled design (7).png">
+        <img class="h-6 w-6 absolute top-0 m-2 bg-gray-100" src="./images/heart (1).png " alt="Heart icon">
+        <button class="absolute inset-0 flex items-center justify-center">
+          <span class="border border-black bg-gray-400 px-2 py-1">Shop Now<img class="h-4 w-4"
+              src="./images/right-arrow.png"></span>
+        </button>
+      </div>
+
+      <div class="relative">
+        <img src="./images/floral/Untitled design (8).png">
+        <img class="h-6 w-6 absolute top-0 m-2 bg-gray-100" src="./images/heart (1).png " alt="Heart icon">
+        <button class="absolute inset-0 flex items-center justify-center">
+          <span class="border border-black bg-gray-400 px-2 py-1">Shop Now<img class="h-4 w-4"
+              src="./images/right-arrow.png"></span>
+        </button>
+      </div>
+
+      <div class="relative">
+        <img src="./images/floral/Untitled design (9).png" alt="Product Image">
+        <img class="h-6 w-6 absolute top-0 left-0 m-2 bg-gray-100" src="./images/heart (1).png" alt="Heart icon">
+        <button class="absolute inset-0 flex items-center justify-center">
+          <span class="border border-black bg-gray-400 px-2 py-1">Shop Now<img class="h-4 w-4 flex items-center"
+              src="./images/right-arrow.png"></span>
+        </button>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!--Most Wanted-->
+  <section class="p-4">
+    <h1 class="font-bold text-3xl mb-5">Most Wanted</h1>
+
+    <div class="grid grid-cols-2 mt-5 gap-5 md:grid-cols-4 p-5">
+      <div class="relative">
+        <img class="" src="./images/festive/Untitled design (13).png">
+        <img class="h-6 w-6 absolute bottom-0 m-2 bg-gray-100" src="./images/heart (1).png " alt="Heart icon">
+        <p class="absolute border border-white top-0 p-1 bg-red-600 text-white">Sale</p>
+
+      </div>
+
+      <div class="relative">
+        <img src="./images/festive/Untitled design (12).png">
+        <img class="h-6 w-6 absolute bottom-0 m-2 bg-gray-100 " src="./images/heart (1).png " alt="Heart icon">
+        <p class="absolute border border-white top-0 p-1 bg-red-600 text-white">Sale</p>
+
+      </div>
+
+      <div class="relative">
+        <img src="./images/festive/Untitled design (11).png">
+        <img class="h-6 w-6 absolute bottom-0 m-2 bg-gray-100" src="./images/heart (1).png " alt="Heart icon">
+        <p class="absolute border border-white top-0 p-1 bg-red-600 text-white">Sale</p>
+
+
+      </div>
+
+      <div class="relative">
+        <img src="./images/festive/Untitled design (10).png" alt="Product Image">
+        <img class="h-6 w-6 absolute bottom-0 left-0 m-2 bg-gray-100" src="./images/heart (1).png" alt="Heart icon">
+        <p class="absolute border border-white top-0 p-1 bg-red-600 text-white">Sale</p>
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!--last img-->
+  <section class="bg-gray-600 border border-black m-3">
+    <div class="flex flex-col md:flex-row items-center md:items-start md:p-10 gap-6">
+
+      <!-- Image Section -->
+      <div class="hidden md:block">
+        <img class="h-60 ml-24" src="./images/fashion9-990x523.jpg" alt="The header">
+      </div>
+
+      <!-- Text Content Section -->
+      <div class="flex flex-col text-center md:text-left ml-20">
+        <h2 class="font-bold text-2xl text-white md:text-5xl mb-5">Limited Offer</h2>
+        <button class="bg-white rounded p-2 text-black w-fit mx-auto md:mx-0">Shop Now</button>
+        <p class="mt-5 text-white">35% OFF on this for the first 30 Customers</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!--input box-->
+  <section class="text-center ">
+    <h1 class="font-bold text-3xl mb-2">Join our news letter</h1>
+    <p class="mb-4">Sign up for email news paper to get discounts updates and more</p>
+    <input class=" mb-10 border border-black w-fit">
+  </section>
+
+
+  <!--footer-->
+  <section class="bg-gray-400">
+    <h1>Nostra</h1>
+    <p>@2025greenday.com</p>
+  </section>
+
+
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
